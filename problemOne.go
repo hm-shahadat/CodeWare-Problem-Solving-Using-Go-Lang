@@ -4,6 +4,24 @@
 // In this kata you need to check the provided array for good ideas 'good' and bad ideas 'bad'. If there are one or two good ideas, return 'Publish!', if there are more than 2 return 'I smell a series!'. If there are no good ideas, as is often the case, return 'Fail!'.
 
 // link of this problem: https://www.codewars.com/kata/57f222ce69e09c3630000212/train/go
+package kata
 
+func Well(x []string) string {
 
+	count := 0
 
+	for _, num := range x {
+
+		if num == "good" {
+			count++
+		}
+	}
+
+	if count == 0 {
+		return "Fail!"
+	} else if count <= 2 {
+		return "Publish!"
+	} else {
+		return "I smell a series!"
+	}
+}
