@@ -4,7 +4,7 @@
 // "string" ==> ["string"]
 // "Robin Singh" ==> ["Robin", "Singh"]
 // "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
-
+// Link of this problem : https://www.codewars.com/kata/57e76bc428d6fbc2d500036d/solutions/go
 package kata
 
 import (
